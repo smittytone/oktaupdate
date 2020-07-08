@@ -8,12 +8,12 @@ plist_path="$HOME/Library/LaunchAgents/com.bps.oktaupdate.plist"
 script_path="$HOME/Library/Application Scripts/com.bps.oktaupdate"
 
 # Make an Application Scripts directory if it doesn't exist
-if [ ! -e "$target" ]; then
-    mkdir "$target" || exit
+if [ ! -e "$script_path" ]; then
+    mkdir "$script_path" || exit
 fi
 
 # Install the files
-cp oktaupdate.scpt "$target/oktaupdate.scpt"
+cp oktaupdate.scpt "$script_path/oktaupdate.scpt"
 cp com.bps.oktaupdate.plist "$plist_path"
 
 # Is the launch agent already installed?

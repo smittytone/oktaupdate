@@ -1,4 +1,4 @@
-# oktaupdate 1.0.1 #
+# oktaupdate 1.0.2 #
 
 For macOS users, this Launch Agent regularly runs an AppleScript which in turn refreshes a browser window displaying the Okta applications page. For me, Okta periodically signs itself out, so I have to login again just to access one application. The Launch Agent prevents this.
 

@@ -3,7 +3,7 @@
 # @version 1.0.2
 
 # Create scrip[ts folder if it's not present
-echo "Installing files..."
+echo "Installing OktaUpdate files..."
 plist_path="$HOME/Library/LaunchAgents/com.bps.oktaupdate.plist"
 script_path="$HOME/Library/Application Scripts/com.bps.oktaupdate"
 

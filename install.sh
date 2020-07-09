@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# @version 1.0.2
+# @version 2.0.0
 
 # Create scrip[ts folder if it's not present
-echo "Installing OktaUpdate files..."
+echo "Compiling and installing oktaupdate files..."
 plist_path="$HOME/Library/LaunchAgents/com.bps.oktaupdate.plist"
 script_path="$HOME/Library/Application Scripts/com.bps.oktaupdate"
 
@@ -13,6 +13,7 @@ if [ ! -e "$script_path" ]; then
 fi
 
 # Install the files
+osacompile -o oktaupdate.scpt -x oktaupdate.applescript
 cp oktaupdate.scpt "$script_path/oktaupdate.scpt"
 cp com.bps.oktaupdate.plist "$plist_path"
 
@@ -28,3 +29,6 @@ fi
 # Load the launch agent
 echo "Loading launch agent..."
 launchctl load "$plist_path"
+
+# Clean up
+rm oktaupdate.scpt

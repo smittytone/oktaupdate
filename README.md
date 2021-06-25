@@ -15,8 +15,8 @@ Change the value of *the_target* in `oktaupdate.applescript` and recompile to sp
 Just run the following on your Mac:
 
 1. `git clone https://github.com/smittytone/oktaupdate.git`
-2. `cd oktaupdate`
-3. `./install.sh`
+1. `cd oktaupdate`
+1. `./install.sh`
 
 ### Installation Notes ###
 
